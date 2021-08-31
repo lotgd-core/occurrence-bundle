@@ -102,7 +102,7 @@ class OccurrenceDispatcher
             {
                 foreach ($params as $listener)
                 {
-                    $this->addListener($occurrence, [$subscriber, $listener[0]], $listener[1], $params[2]);
+                    $this->addListener($occurrence, [$subscriber, $listener[0]], $listener[1], $listener[2]);
                 }
             }
         }
