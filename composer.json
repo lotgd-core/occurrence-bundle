@@ -1,6 +1,6 @@
 {
     "name": "lotgd-core/occurrence-bundle",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "type": "lotgd-bundle",
     "description": "Core Bundle: Occurrence system for LoTGD IDMarinas Edition. Special events in different areas.",
     "keywords": ["lotgd-core", "idmarinas-edition", "lotgd", "occurrence", "lotgd-core-bundle", "lotgd-bundle", "special-events"],
