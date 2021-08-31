@@ -96,7 +96,7 @@ class ExtractingOccurrenceDispatcher extends OccurrenceDispatcher implements Occ
             throw new \InvalidArgumentException('Priority must be one of "OccurrenceSubscriberInterface::PRIORITY_INFO, OccurrenceSubscriberInterface::PRIORITY_INTERACTIVE or OccurrenceSubscriberInterface::PRIORITY_ANSWER"');
         }
 
-        $this->listeners[] = parent::addListener($eventName, $listener[1], $probability, $priority);
+        $this->listeners[] = [$eventName, $listener[1], min(10000, max(0, $probability)), $priority];
     }
 
     public static function getSubscribedOccurrences(): array
