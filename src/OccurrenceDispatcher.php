@@ -79,7 +79,7 @@ class OccurrenceDispatcher
             OccurrenceSubscriberInterface::PRIORITY_ANSWER,
         ]))
         {
-            new \InvalidArgumentException('Priority must be one of "OccurrenceSubscriberInterface::PRIORITY_INFO, OccurrenceSubscriberInterface::PRIORITY_INTERACTIVE or OccurrenceSubscriberInterface::PRIORITY_ANSWER"');
+            throw new \InvalidArgumentException('Priority must be one of "OccurrenceSubscriberInterface::PRIORITY_INFO, OccurrenceSubscriberInterface::PRIORITY_INTERACTIVE or OccurrenceSubscriberInterface::PRIORITY_ANSWER"');
         }
 
         $this->listeners[$occurrence][] = [$listener, min(10000, max(0, $probability)), $priority];
