@@ -22,7 +22,6 @@ class OccurrenceDispatcher
     private $listeners = [];
     private $occurrences;
     private $response;
-    private $ordered;
 
     public function __construct(Occurrence $occurrence)
     {
@@ -61,10 +60,6 @@ class OccurrenceDispatcher
     {
         if (null !== $occurrence)
         {
-            if ( ! \is_array($this->ordered))
-            {
-            }
-
             if (empty($this->listeners[$occurrence]))
             {
                 return [];
