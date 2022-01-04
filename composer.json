@@ -1,6 +1,6 @@
 {
     "name": "lotgd-core/occurrence-bundle",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "type": "lotgd-bundle",
     "description": "Core Bundle: Occurrence system for LoTGD IDMarinas Edition. Special events in different areas.",
     "keywords": ["lotgd-core", "idmarinas-edition", "lotgd", "occurrence", "lotgd-core-bundle", "lotgd-bundle", "special-events"],
@@ -19,14 +19,14 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^7.3",
-        "symfony/config": "^4.4",
-        "symfony/dependency-injection": "^4.4",
-        "symfony/event-dispatcher": "^4.4",
-        "symfony/http-kernel": "^4.4"
+        "php": "^7.3 | ^8.0",
+        "symfony/config": "^4.4 | ^5.4",
+        "symfony/dependency-injection": "^4.4 | ^5.4",
+        "symfony/event-dispatcher": "^4.4 | ^5.4",
+        "symfony/http-kernel": "^4.4 | ^5.4"
     },
     "require-dev": {
-        "idmarinas/lotgd": "^5.0 | ^6.0",
+        "idmarinas/lotgd": "^5.0 | ^6.0 | ^7.0 | 8.0",
         "matthiasnoback/symfony-config-test": "^4.2",
         "matthiasnoback/symfony-dependency-injection-test": "^4.2",
         "nyholm/symfony-bundle-test": "^1.7",
